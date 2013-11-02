@@ -1,34 +1,29 @@
-Busca Saúde - Encontre o serviço de saúde mais próximo de você
+Academias da Cidade - Encontre a academia mais próxima de você
 ==========
 
+Aplicativo submetido no Hackathon Americas Datafest
 
-Aplicativo que concorre ao Hackathon da Prefeitura do Recife e Firefox OS
+OBJETIVO DO PROJETO: APLICATIVO PARA MOSTRAR QUAL A ACADEMIA DA CIDADE MAIS PR”XIMA PARA AS PESSOAS QUE EST√O MIGRANDO PARA UMA DETERMINADA CIDADE E MOTIVA-LAS A MANTER A FREQUENCIA.
 
-Objetivo: O Aplicativo tem por objetivo mostrar para o usuário final os pontos de saúde mais próximos incluindo academias da cidade, hospitais públicos e privados, unidades de saúde da familia entre outros.
+Objetivo: O aplicativo tem por objetivo mostrar as academias da cidade mais próximas para as pessoas que estão migrando para uma determinada cidade e motiva-las a manter a frequência.
 
-Restrições: Por enquanto o aplicativo só funcionará em Recife pois utilizamos os dados abertos da Prefeitura do Recife porem construimos um EDI que permite que qualquer dado seja inputado em nosso banco de dados e funcione em qualquer estado.
+Restrições: Por enquanto o aplicativo só funcionará em Recife pois utilizamos os dados abertos da Prefeitura do Recife.
 
-Tecnologias: HTML5, CSS3, Javascript, API do Google Maps, API da Prefeitura do Recife, PHP 5, Java
-Banco de dados: Mysql
+Tecnologias: HTML5, CSS3, Javascript, API do Google Maps, API da Prefeitura do Recife.
 Servidor: Linux
 
 O aplicativo roda web então é multiplataforma tendo como principal ponto positivo o layout responsivo que permite a flexibilidade de aparelhos celulares e computadores
 
-Link da apresentação no youtube: http://www.youtube.com/watch?v=zUsIccLJ4wI
+Link da apresentação no youtube: ?
 
 Criadores:
 
 Yelken Heckman
-
 http://br.linkedin.com/in/yelken
-
 yelkezin@gmail.com
 
-Rodrigo Portillo
-
-http://br.linkedin.com/in/rodrigoportillo
-
-portillo.designer@gmail.com
+Leonardo Lima
+http://www.linkedin.com/pub/leonardo-lima/19/122/22
+lccsl1@gmail.com 
 
 
-Mais informações nos contactem por e-mail.
