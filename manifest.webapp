@@ -1,8 +1,8 @@
 
 {
   "version": "0.1",
-  "name": "Busca Saúde",
-  "description": "Serviço de saúde para a população!",
+  "name": "Gym open AIR",
+  "description": "Academia da cidade mais próxima para você!",
   "icons": {
     "16": "assets/icon-16.png",
     "48": "assets/icon-48.png",
@@ -10,22 +10,22 @@
     "128": "assets/icon-128.png"
   },
   "developer": {
-    "name": "BuscaSaude",
-    "url": "http://buscasaude.uni5.net"
+    "name": "GyOpenAir",
+    "url": "http://academiadacidade.uni5.net"
   },
   "installs_allowed_from": ["*"],
   "appcache_path": "/cache.manifest",
   "locales": {
     "pt-BR": {
-      "description": "Serviço de saúde para a população",
+      "description": "Academia de cidade mais próxima",
       "developer": {
-        "url": "http://buscasaude.uni5.net/"
+        "url": "http://academiadacidade.uni5.net/"
       }
     },
     "en-US": {
-      "description": "Health Service",
+      "description": "Gym Service",
       "developer": {
-        "url": "http://buscasaude.uni5.net/"
+        "url": "http://academiadacidade.uni5.net/"
       }
     }
   },
