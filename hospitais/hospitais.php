@@ -1,33 +1,31 @@
 <?php
-$username = 'buscasaude';
+//nome de usuario, senha, caminho do banco, nome do banco
+
+$username = 'academiadacida';
 $password = 'abc1020';
-$hostname = 'mysql.buscasaude.uni5.net'; 
-$database = 'buscasaude';
+$hostname = 'mysql.academiadacida.uni5.net'; 
+$database = 'academiadacida';
 
-$dbhandle = mysql_connect($hostname, $username, $password) 
- or die("Não é possível conectar ao MySQL");
 
-$selected = mysql_select_db($database,$dbhandle) 
-  or die("Não foi possível conectar em buscasaude");
-
-$result = mysql_query('SELECT * FROM ACADEMIAS');
-
-if($result === FALSE) {
-    die(mysql_error());
-}
+	try {
+		$con = new PDO("mysql:host=hostname; dbname=database",$username,$password);
+	
+	} catch (Exception $e) {
+		echo $e->getMessage();
+	}
 
 // Criar arquivo JSON 
 
-$jsonStr = '{"hospitais": [';
+$jsonStr = '{"academias": [';
 
 $hospitalObj = '';
 
 while ($row = mysql_fetch_array($result)) {
-   $hospitalObj = $hospitalObj.'{"nome": ' . '"' . $row{'NOME'} . '"' . ', ' . '"tipo": ' . '"' . $row{'TIPO'} . '"' . ', '  .'"especialidades": ' .  '"' . $row{'ESPECIALIDADES'} .  '"' . ', ' . '"endereco": ' . '"' . $row{'ENDERECO'} . '"' . ', ' . '"bairro": ' . '"' . $row{'BAIRRO'} . '"' . ', ' . '"latitude": ' . $row{'LATITUDE'} . ', ' . '"longitude": ' . $row{'LONGITUDE'} . '}' . ',';
+   $academiasObj = $academiasObj.'{"academia": ' . '"' . $row{'academia_nome'} . '"' . ', ' . '"endereco": ' . '"' . $row{'endereco'} . '"' . ', '  .'"bairro": ' .  '"' . $row{'bairro'} .  '"' . ', ' . '"fone": ' . '"' . $row{'fone'} . '"' . ', ' . '"latitude": ' . '"' . $row{'latitude'} . '"' . ', ' . '"longitude": ' . $row{'longitude'} . ', ' . '"horario_de_aulas": ' . $row{'horario_de_aulas'} . '}' . ',';
 }
 
-$hospitalObj = substr($hospitalObj, 0, -1);
-$jsonStr = $jsonStr . $hospitalObj .']}';
+$academiasObj = substr($academiasObj, 0, -1);
+$jsonStr = $jsonStr . $academiasObj .']}';
 
 echo $jsonStr;
 
